@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './global.css';
+
+import Routes from './routes';
+
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          vo dumi guilherme
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Routes />
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+/* function App() {
+  const [counter, setCounter] = useState(0);
+  // useState retorna um array com 2 posiçoes [valor, funçãoDeAtualização]
+  function increment(){
+    setCounter(counter+1);
+  }
+
+  return (
+    <div>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment}>Incrementar</button>
     </div>
   );
 }
 
 export default App;
+ */
