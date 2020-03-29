@@ -15,7 +15,6 @@ export default function Incidents(){
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
 
-
     const navigation = useNavigation();
 
     function navigateToDetail(incident){
@@ -46,7 +45,7 @@ export default function Incidents(){
 
     useEffect(()=> {
         loadIncidents();
-    }), [];
+    }, []);
 
     return (
         <View style={styles.container}>
